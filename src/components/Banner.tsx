@@ -1,4 +1,5 @@
 import TypeWriter from "@/elements/TypeWriter"
+import Image from "next/image"
 
 const Banner = () => {
     return (
@@ -6,7 +7,13 @@ const Banner = () => {
             <div className="flex flex-col md:flex-row gap-y-4 justify-between lg:items-center">
                 {/* IMAGE BOX */}
                 <div className="h-screen flex-1 banner relative flex justify-center items-center md:before:absolute md:before:top-0 md:before:right-0 md:before:w-full md:before:h-full md:before:bg-contain md:before:bg-no-repeat md:before:bg-right md:before:bg-[url('/img/banner.png')]">
-                    <img src="/img/profile.png" alt="" className="max-w-sm w-full z-[10]" />
+                    {/* <img src="/img/profile.png" alt="" className="max-w-sm w-full z-[10]" /> */}
+                    <Image
+                        className="max-w-sm w-full z-[10]"
+                        src="/img/profile.png"
+                        alt=""
+                        width={400}
+                        height={400} />
                 </div>
                 {/* CONTENT */}
                 <div className="relative md:px-16 md:order-first">
