@@ -19,11 +19,11 @@ const Banner = () => {
                 <div className="relative flex-1 md:px-16 md:order-first">
                     <h3 className='font-extrabold text-DeepNavy-blue'>HELLO</h3>
                     <h1
-                        className="bg-gradient-to-r from-DeepNavy-blue via-blue-500 to-blue-700 bg-clip-text text-2xl font-extrabold text-transparent sm:text-5xl"
+                        className="bg-gradient-to-r from-DeepNavy-blue via-blue-500 to-blue-700 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl"
                     >
                         I&apos;m Hammad Shamir
                     </h1>
-                    <h3 className="flex gap-x-2 bg-gradient-to-r from-DeepNavy-blue via-blue-500 to-blue-700 bg-clip-text text-lg font-extrabold text-transparent sm:text-3xl">a <TypeWriter /></h3>
+                    <h3 className="flex gap-x-2 bg-gradient-to-r from-DeepNavy-blue via-blue-500 to-blue-700 bg-clip-text text-xl font-extrabold text-transparent sm:text-3xl">a <TypeWriter /></h3>
 
                     {/* <p className="mx-auto mt-4 max-w-xl sm:text-xl/relaxed">
                         Welcome to my web developer portfolio! I&apos;m Hammad Shamir, a skilled and creative web developer with a passion for creating beautiful, responsive, and user-friendly websites. I&apos;ve worked on a variety of web projects, ranging from personal blogs to e-commerce platforms.
