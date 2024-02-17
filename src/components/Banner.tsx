@@ -2,7 +2,7 @@ import TypeWriter from "@/elements/TypeWriter"
 
 const Banner = () => {
     return (
-        <section className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 text-DeepNavy-blue">
+        <section className="mx-auto max-w-screen-xl  text-DeepNavy-blue">
             <div className="lg:flex justify-between lg:items-center">
                 <div className="relative">
                     <h3 className='font-extrabold text-DeepNavy-blue'>HELLO</h3>
@@ -26,14 +26,14 @@ const Banner = () => {
                             className="block w-full rounded border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75 sm:w-auto"
                             href="#"
                         >
-                            Get Started
+                           Hire Me
                         </a>
 
                         <a
                             className="block w-full rounded border border-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto"
                             href="#"
                         >
-                            Learn More
+                            Portfolio
                         </a>
                     </div>
                 </div>
