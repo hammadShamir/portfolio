@@ -1,4 +1,4 @@
-import React from 'react'
+import TypeWriter from "@/elements/TypeWriter"
 
 const Banner = () => {
     return (
@@ -11,7 +11,10 @@ const Banner = () => {
                     >
                         I'm Hammad Shamir
 
-                        <span className="sm:block"> a Web Developer </span>
+                        <span className="sm:flex gap-x-4">
+                            a
+                            <TypeWriter />
+                        </span>
                     </h1>
 
                     <p className="mx-auto mt-4 max-w-xl sm:text-xl/relaxed">
