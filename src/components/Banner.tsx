@@ -2,19 +2,24 @@ import TypeWriter from "@/elements/TypeWriter"
 
 const Banner = () => {
     return (
-        <section className="mx-auto max-w-screen-xl bg-light-gray">
-            <div className="lg:flex justify-between lg:items-center">
-                <div className="relative px-16">
+        <section className="mx-auto max-w-screen-xl bg-light-gray p-6 md:p-0">
+            <div className="flex flex-col md:flex-row gap-y-4 justify-between lg:items-center">
+                {/* IMAGE BOX */}
+                <div className="h-screen flex-1 banner relative flex justify-center items-center md:before:absolute md:before:top-0 md:before:right-0 md:before:w-full md:before:h-full md:before:bg-contain md:before:bg-no-repeat md:before:bg-right md:before:bg-[url('/img/banner-3.png')]">
+                    <img src="/img/profile.png" alt="" className="max-w-sm w-full z-[10]" />
+                </div>
+                {/* CONTENT */}
+                <div className="relative md:px-16 md:order-first">
                     <h3 className='font-extrabold text-DeepNavy-blue'>HELLO</h3>
                     <h1
-                        className="bg-gradient-to-r from-DeepNavy-blue via-blue-500 to-blue-700 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl"
+                        className="bg-gradient-to-r from-DeepNavy-blue via-blue-500 to-blue-700 bg-clip-text text-2xl font-extrabold text-transparent sm:text-5xl"
                     >
                         I'm Hammad Shamir
 
-                        <span className="sm:flex gap-x-4">
+                        <h3 className="flex gap-x-2">
                             a
                             <TypeWriter />
-                        </span>
+                        </h3>
                     </h1>
 
                     <p className="mx-auto mt-4 max-w-xl sm:text-xl/relaxed">
@@ -23,22 +28,19 @@ const Banner = () => {
 
                     <div className="mt-8 flex flex-wrap justify-left gap-4">
                         <a
-                            className="block w-full rounded border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75 sm:w-auto"
+                            className="block w-full rounded border border-DeepNavy-blue bg-DeepNavy-blue px-12 py-3 text-sm font-medium text-light-gray hover:bg-transparent hover:text-DeepNavy-blue focus:outline-none focus:ring active:text-opacity-75 sm:w-auto"
                             href="#"
                         >
                             Hire Me
                         </a>
 
                         <a
-                            className="block w-full rounded border border-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto"
+                            className="block w-full rounded border border-DeepNavy-blue px-12 py-3 text-sm font-medium text-DeepNavy-blue hover:bg-DeepNavy-blue hover:text-light-gray focus:outline-none focus:ring active:DeepNavy-blue sm:w-auto"
                             href="#"
                         >
                             Portfolio
                         </a>
                     </div>
-                </div>
-                <div className="h-screen flex-1 banner relative flex justify-center items-center before:absolute before:top-0 before:right-0 before:w-full before:h-full before:bg-contain before:bg-no-repeat before:bg-right before:bg-[url('/img/banner-3.png')]">
-                    <img src="/img/profile.png" alt="" className="max-w-sm w-full z-[10]"/>
                 </div>
             </div>
         </section>

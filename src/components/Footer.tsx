@@ -4,35 +4,35 @@ import React from 'react'
 
 const Footer = () => {
     return (
-        <footer className="bg-DeepNavy-blue">
+        <footer className="bg-DeepNavy-blue text-light-gray">
             <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
                 <div className="flex justify-center items-center">
                     <Logo />
                 </div>
 
-                <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500">
-                © 2024 Your Name. All Rights Reserved.
+                <p className="mx-auto mt-6 max-w-md text-center leading-relaxed">
+                © 2024 Developer Hammad. All Rights Reserved.
                 </p>
 
                 <ul className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
                     <li>
-                        <Link className="text-gray-500 transition hover:text-gray-500/75" href="#"> About </Link>
+                        <Link className="transition hover:text-gray-500/75" href="#"> About </Link>
                     </li>
 
                     <li>
-                        <Link className="text-gray-500 transition hover:text-gray-500/75" href="#"> Services </Link>
+                        <Link className="transition hover:text-gray-500/75" href="#"> Services </Link>
                     </li>
 
                     <li>
-                        <Link className="text-gray-500 transition hover:text-gray-500/75" href="#"> Portfolio </Link>
+                        <Link className="transition hover:text-gray-500/75" href="#"> Portfolio </Link>
                     </li>
 
                     <li>
-                        <Link className="text-gray-500 transition hover:text-gray-500/75" href="#"> Blog </Link>
+                        <Link className="transition hover:text-gray-500/75" href="#"> Blog </Link>
                     </li>
 
                     <li>
-                        <Link className="text-gray-500 transition hover:text-gray-500/75" href="#"> Contact </Link>
+                        <Link className="transition hover:text-gray-500/75" href="#"> Contact </Link>
                     </li>
                 </ul>
 
@@ -42,7 +42,7 @@ const Footer = () => {
                             href="#"
                             rel="noreferrer"
                             target="_blank"
-                            className="text-gray-700 transition hover:text-gray-700/75"
+                            className=" transition hover:text-gray-700/75"
                         >
                             <span className="sr-only">Facebook</span>
                             <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -60,7 +60,7 @@ const Footer = () => {
                             href="#"
                             rel="noreferrer"
                             target="_blank"
-                            className="text-gray-700 transition hover:text-gray-700/75"
+                            className="transition hover:text-gray-700/75"
                         >
                             <span className="sr-only">Instagram</span>
                             <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -78,7 +78,7 @@ const Footer = () => {
                             href="#"
                             rel="noreferrer"
                             target="_blank"
-                            className="text-gray-700 transition hover:text-gray-700/75"
+                            className="transition hover:text-gray-700/75"
                         >
                             <span className="sr-only">Twitter</span>
                             <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -94,7 +94,7 @@ const Footer = () => {
                             href="#"
                             rel="noreferrer"
                             target="_blank"
-                            className="text-gray-700 transition hover:text-gray-700/75"
+                            className="transition hover:text-gray-700/75"
                         >
                             <span className="sr-only">GitHub</span>
                             <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -112,7 +112,7 @@ const Footer = () => {
                             href="#"
                             rel="noreferrer"
                             target="_blank"
-                            className="text-gray-700 transition hover:text-gray-700/75"
+                            className="transition hover:text-gray-700/75"
                         >
                             <span className="sr-only">Dribbble</span>
                             <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
