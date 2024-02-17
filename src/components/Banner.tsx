@@ -12,8 +12,8 @@ const Banner = () => {
                         className="max-w-sm w-full z-[10]"
                         src="/img/profile.png"
                         alt=""
-                        width={400}
-                        height={400} />
+                        width={500}
+                        height={500} />
                 </div>
                 {/* CONTENT */}
                 <div className="relative md:px-16 md:order-first">
@@ -21,7 +21,7 @@ const Banner = () => {
                     <h1
                         className="bg-gradient-to-r from-DeepNavy-blue via-blue-500 to-blue-700 bg-clip-text text-2xl font-extrabold text-transparent sm:text-5xl"
                     >
-                        I'm Hammad Shamir
+                        I&apos;m Hammad Shamir
 
                         <div className="flex gap-x-2">
                             a
@@ -30,7 +30,7 @@ const Banner = () => {
                     </h1>
 
                     <p className="mx-auto mt-4 max-w-xl sm:text-xl/relaxed">
-                        Welcome to my web developer portfolio! I'm Mitchell, a skilled and creative web developer with a passion for creating beautiful, responsive, and user-friendly websites. I've worked on a variety of web projects, ranging from personal blogs to e-commerce platforms.
+                        Welcome to my web developer portfolio! I&apos;m Hammad Shamir, a skilled and creative web developer with a passion for creating beautiful, responsive, and user-friendly websites. I&apos;ve worked on a variety of web projects, ranging from personal blogs to e-commerce platforms.
                     </p>
 
                     <div className="mt-8 flex flex-wrap justify-left gap-4">
