@@ -15,7 +15,8 @@ const config: Config = {
       },
       colors: {
         'Midnight-blue': '#101720',
-        'DeepNavy-blue': '#011222'
+        'DeepNavy-blue': '#011222',
+        "light-gray": "#b4b4b4"
       },
     },
   },
