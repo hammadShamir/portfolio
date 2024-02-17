@@ -5,7 +5,7 @@ const Banner = () => {
         <section className="mx-auto max-w-screen-xl bg-light-gray p-6 md:p-0">
             <div className="flex flex-col md:flex-row gap-y-4 justify-between lg:items-center">
                 {/* IMAGE BOX */}
-                <div className="h-screen flex-1 banner relative flex justify-center items-center md:before:absolute md:before:top-0 md:before:right-0 md:before:w-full md:before:h-full md:before:bg-contain md:before:bg-no-repeat md:before:bg-right md:before:bg-[url('/img/banner-3.png')]">
+                <div className="h-screen flex-1 banner relative flex justify-center items-center md:before:absolute md:before:top-0 md:before:right-0 md:before:w-full md:before:h-full md:before:bg-contain md:before:bg-no-repeat md:before:bg-right md:before:bg-[url('/img/banner.png')]">
                     <img src="/img/profile.png" alt="" className="max-w-sm w-full z-[10]" />
                 </div>
                 {/* CONTENT */}
@@ -16,10 +16,10 @@ const Banner = () => {
                     >
                         I'm Hammad Shamir
 
-                        <h3 className="flex gap-x-2">
+                        <div className="flex gap-x-2">
                             a
                             <TypeWriter />
-                        </h3>
+                        </div>
                     </h1>
 
                     <p className="mx-auto mt-4 max-w-xl sm:text-xl/relaxed">
