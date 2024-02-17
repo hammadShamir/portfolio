@@ -6,7 +6,7 @@ const Header = () => {
         <header className="bg-DeepNavy-blue text-light-gray">
             <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-16">
                 <div className="flex h-16 items-center justify-between">
-                    <div className="flex-1 md:flex md:items-center md:gap-12">
+                    <div className="flex-1 md:flex md:items-center md:gap-12 text-3xl">
                         <Logo />
                     </div>
                     <div className="md:flex md:items-center">

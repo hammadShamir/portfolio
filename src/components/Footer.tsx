@@ -6,12 +6,12 @@ const Footer = () => {
     return (
         <footer className="bg-DeepNavy-blue text-light-gray">
             <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
-                <div className="flex justify-center items-center">
+                <div className="flex justify-center items-center text-3xl">
                     <Logo />
                 </div>
 
                 <p className="mx-auto mt-6 max-w-md text-center leading-relaxed">
-                © 2024 Developer Hammad. All Rights Reserved.
+                    © 2024 Developer Hammad. All Rights Reserved.
                 </p>
 
                 <ul className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
