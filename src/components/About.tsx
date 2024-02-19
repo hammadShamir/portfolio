@@ -1,7 +1,7 @@
 import Image from "next/image"
 const About = () => {
   return (
-    <section id="about" className="bg-DeepNavy-blue text-light-gray mx-auto p-6 md:p-0">
+    <section id="about" className="min-h-screen bg-DeepNavy-blue text-light-gray mx-auto p-6 md:p-0">
       <div className="mx-auto flex flex-col md:flex-row gap-y-4 justify-between lg:items-center">
         {/* IMAGE BOX */}
         <div className="h-screen flex-1 relative flex justify-center md:justify-left items-center">
@@ -14,11 +14,11 @@ const About = () => {
         </div>
         {/* CONTENT */}
         <div className="relative flex-1 flex flex-col justify-center">
-          <h1
+          <h2
             className="bg-gradient-to-r from-blue-500 via-blue-700 to-blue-900 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl xl:text-6xl 2xl:text-7xl"
           >
             About Me
-          </h1>
+          </h2>
           <p className="mt-4 max-w-xl sm:text-xl/relaxed">
             Welcome to my web developer portfolio! I&apos;m Hammad Shamir, a skilled and creative web developer with a passion for creating beautiful, responsive, and user-friendly websites. I&apos;ve worked on a variety of web projects, ranging from personal blogs to e-commerce platforms.
           </p>
