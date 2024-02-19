@@ -1,7 +1,7 @@
 import Image from "next/image"
 const About = () => {
   return (
-    <section id="about" className="min-h-screen bg-DeepNavy-blue text-light-gray mx-auto p-6 md:p-0">
+    <section id="about" className="bg-DeepNavy-blue text-light-gray mx-auto p-6 md:p-0">
       <div className="mx-auto flex flex-col md:flex-row gap-y-4 justify-between lg:items-center">
         {/* IMAGE BOX */}
         <div className="h-screen flex-1 relative flex justify-center md:justify-left items-center">

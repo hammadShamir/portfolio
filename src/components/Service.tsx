@@ -2,9 +2,9 @@ import ServiceCard from "@/elements/ServiceCard"
 
 const Service = () => {
     return (
-        <section id="about" className="min-h-screen bg-light-gray text-DeepNavy-blue mx-auto p-6 flex flex-col gap-y-6 items-center">
+        <section id="about" className="bg-light-gray text-DeepNavy-blue mx-auto p-6 flex flex-col gap-y-6 items-center">
             <h2
-                className="bg-gradient-to-r from-DeepNavy-blue via-blue-700 to-purple-500 bg-clip-text text-5xl font-extrabold text-transparent xl:text-6xl 2xl:text-7xl"
+                className="bg-gradient-to-r from-DeepNavy-blue via-blue-500 to-blue-700 bg-clip-text text-5xl font-extrabold text-transparent xl:text-6xl 2xl:text-7xl"
             >
                 Services
             </h2>
