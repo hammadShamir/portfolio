@@ -2,7 +2,7 @@ import React from 'react'
 
 const SocialLinks = () => {
     return (
-        <ul className="mt-4 flex justify-left gap-6 md:gap-8 text-DeepNavy-blue">
+        <ul className="mt-6 xl:mt-6 2xl:mt-10 flex justify-left gap-6 md:gap-8 text-DeepNavy-blue">
             <li>
                 <a
                     href="#"
