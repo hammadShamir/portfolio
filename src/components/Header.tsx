@@ -3,7 +3,7 @@ import Logo from "@/elements/Logo"
 import { useState } from "react"
 import MobileMenu from "./MobileMenu";
 const Header = () => {
-    const [menu, setMenu] = useState(false);
+    const [menu, setMenu] = useState<boolean>(false);
     return (
         <header className="bg-DeepNavy-blue text-light-gray shadow-md shadow-black sticky top-0 left-0 z-[30] w-full">
             <div className="mx-auto px-4 sm:px-6 lg:px-16">
@@ -15,7 +15,7 @@ const Header = () => {
                         <nav aria-label="Global" className="hidden md:block">
                             <ul className="flex items-center gap-6 text-sm">
                                 <li>
-                                    <Link className="transition hover:text-gray-500/75" href="#"> About </Link>
+                                    <Link className="transition hover:text-gray-500/75" href="#about"> About </Link>
                                 </li>
 
                                 <li>
@@ -55,7 +55,7 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-            <MobileMenu menu={menu} />
+            <MobileMenu menu={menu} setMenu={setMenu} />
         </header>
     )
 }

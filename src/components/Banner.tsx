@@ -4,7 +4,7 @@ import Image from "next/image"
 
 const Banner = () => {
     return (
-        <section className="mx-auto bg-light-gray p-6 md:p-0">
+        <section className="bg-light-gray mx-auto  p-6 md:p-0">
             <div className="flex flex-col md:flex-row gap-y-4 justify-between lg:items-center">
                 {/* IMAGE BOX */}
                 <div className="h-screen flex-1 banner relative flex justify-center items-center md:before:absolute md:before:top-0 md:before:right-0 md:before:w-full md:before:h-full md:before:bg-cover md:before:bg-no-repeat md:before:bg-right md:before:bg-[url('/img/banner.png')]">

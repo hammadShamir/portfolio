@@ -9,7 +9,7 @@ const pacifico = Pacifico({
 
 const Logo = () => {
     return (
-        <Link className={`block `} href="#">
+        <Link className={`block `} href="/">
             <h3 className={` ${pacifico.className}`}>{`< Hammad />`}</h3>
         </Link>
     )
