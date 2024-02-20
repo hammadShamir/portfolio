@@ -1,9 +1,10 @@
+import { MdWeb } from "react-icons/md";
 const ServiceCard = () => {
     return (
-        <div className="card bg-DeepNavy-blue text-light-gray p-6 rounded flex flex-col justify-center items-center gap-y-4 shadow-md shadow-black before:absolute md:before:top-0 before:left-0 before:w-full before:h-full  before:bg-[red]">
-            <i className="bg-light-gray text-DeepNavy-blue px-4 py-4 rounded-full">icon</i>
-            <h3 className="text-xl font-bold">Service Title</h3>
-            <p className="text-center text-base">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde tempore nihil inventore cum soluta perferendis veniam delectus ut suscipit nesciunt doloribus corrupti excepturi laborum architecto modi, reprehenderit fugit accusamus cupiditate!</p>
+        <div className="relative card bg-DeepNavy-blue text-light-gray p-6 rounded flex flex-col justify-center items-center gap-y-4 shadow-md shadow-black before:absolute before:bottom-0 before:left-0 before:w-full before:h-2 hover:before:h-full before:bg-gradient-to-r before:from-blue-500 before:via-blue-700 before:to-blue-900 cursor-pointer before:transition-all before:ease-in-out before:duration-500 group" >
+            <i className="bg-light-gray text-DeepNavy-blue h-12 w-12 flex justify-center items-center rounded-full z-10 group-hover:text-light-gray font-bold"><MdWeb className="text-4xl text-DeepNavy-blue group-hover:text-DeepNavy-blue" /></i>
+            <h3 className="text-xl font-bold z-10 group-hover:text-light-gray font-bold">Service Title</h3>
+            <p className="text-center text-base z-10 group-hover:text-light-gray font-bold">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde tempore nihil inventore cum soluta perferendis veniam delectus ut</p>
         </div>
     )
 }

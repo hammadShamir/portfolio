@@ -1,8 +1,8 @@
 import Typewriter from 'typewriter-effect';
 
 const TypeWriter = () => {
-    return (
-        <Typewriter
+  return (
+    <Typewriter
             options={{
                 strings: [' Software Engineer', ' Full Stack Developer', ' Freelancer'],
                 autoStart: true,
@@ -10,7 +10,7 @@ const TypeWriter = () => {
                 delay: 75
             }}
         />
-    )
+  )
 }
 
 export default TypeWriter
