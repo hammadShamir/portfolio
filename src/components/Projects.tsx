@@ -22,6 +22,10 @@ const Projects = () => {
                 breakpoints={{
                     576: {
                         // width: 576,
+                        slidesPerView: 2,
+                    },
+                    900: {
+                        // width: 576,
                         slidesPerView: 3,
                     },
                 }}
