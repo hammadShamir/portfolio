@@ -11,7 +11,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <main className={`bg-light-gray max-w-screen-2xl mx-auto ${inter.className}`}>
       <Header />
-      <section className="">
+      <section>
         <Component {...pageProps} />
       </section>
       <Footer />

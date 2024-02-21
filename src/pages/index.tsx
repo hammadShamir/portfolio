@@ -4,6 +4,7 @@ import Banner from "@/components/Banner";
 import About from "@/components/About";
 import Service from "@/components/Service";
 import Projects from "@/components/Projects";
+import Contact from "@/components/Contact";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,6 +15,7 @@ export default function Home() {
       <About />
       <Service />
       <Projects />
+      <Contact />
     </>
   );
 }
