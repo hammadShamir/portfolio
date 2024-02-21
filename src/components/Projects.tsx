@@ -1,5 +1,8 @@
 import ProjectCard from "@/elements/ProjectCard"
-
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { Autoplay } from 'swiper/modules';
 const Projects = () => {
     return (
         <section className="bg-DeepNavy-blue mx-auto px-4 sm:px-6 lg:px-16 p-6  flex flex-col gap-y-6 ">
@@ -8,12 +11,29 @@ const Projects = () => {
             >
                 Projects
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                <ProjectCard />
-                <ProjectCard />
-                <ProjectCard />
-                <ProjectCard />
-            </div>
+            <Swiper
+                slidesPerView={1}
+                spaceBetween={30}
+                loop={true}
+                autoplay={{
+                    delay: 2000,
+                    disableOnInteraction: false,
+                }}
+                breakpoints={{
+                    576: {
+                        // width: 576,
+                        slidesPerView: 3,
+                    },
+                }}
+                modules={[Autoplay]}
+                style={{ margin: "0px" }}
+            >
+                <SwiperSlide className="shadow-lg shadow-light-gray"> <ProjectCard /> </SwiperSlide>
+                <SwiperSlide className="shadow-lg shadow-light-gray"> <ProjectCard /> </SwiperSlide>
+                <SwiperSlide className="shadow-lg shadow-light-gray"> <ProjectCard /> </SwiperSlide>
+                <SwiperSlide className="shadow-lg shadow-light-gray"> <ProjectCard /> </SwiperSlide>
+                <SwiperSlide className="shadow-lg shadow-light-gray"> <ProjectCard /> </SwiperSlide>
+            </Swiper>
         </section>
     )
 }
