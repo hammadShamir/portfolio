@@ -17,6 +17,7 @@ const Projects = () => {
                 loop={true}
                 autoplay={{
                     delay: 2000,
+                    disableOnInteraction: true,
                     pauseOnMouseEnter: true
                 }}
                 breakpoints={{
