@@ -16,12 +16,12 @@ const Banner = () => {
             <div className="relative flex-1 flex flex-col md:order-first">
                 <h3 className='font-extrabold text-DeepNavy-blue'>HELLO</h3>
                 <h1
-                    className="bg-gradient-to-r from-DeepNavy-blue via-blue-500 to-blue-700 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl xl:text-6xl 2xl:text-7xl"
+                    className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl xl:text-6xl 2xl:text-7xl"
                 >
                     I&apos;m Hammad Shamir
                 </h1>
 
-                <h3 className="flex gap-x-2 bg-gradient-to-r from-DeepNavy-blue via-blue-500 to-blue-700 bg-clip-text text-xl font-extrabold text-transparent sm:text-3xl xl:text-4xl 2xl:text-5xl">a <TypeWriter /></h3>
+                <h3 className="flex gap-x-2 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-xl font-extrabold text-transparent sm:text-3xl xl:text-4xl 2xl:text-5xl">a <TypeWriter /></h3>
 
                 <ul className="mt-6 flex justify-left gap-6 md:gap-8 text-DeepNavy-blue">
                     <li>

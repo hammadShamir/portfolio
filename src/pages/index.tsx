@@ -5,6 +5,7 @@ import About from "@/components/About";
 import Service from "@/components/Service";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
+import Skills from "@/components/Skills";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,6 +13,7 @@ export default function Home() {
   return (
     <>
       <Banner />
+      <Skills />
       <Service />
       <Projects />
       <Contact />
