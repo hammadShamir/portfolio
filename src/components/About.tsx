@@ -20,7 +20,7 @@ const About = () => {
                     About Me
                 </h2>
                 <p className="mt-4 max-w-xl sm:text-xl/relaxed">
-                    Hello! I'm Hammad Shamir, a creative web developer with over 2 years of experience. From personal blogs to e-commerce platforms, I bring a blend of technical expertise and creativity to every project. With a degree in Software Engineering, I'm here to turn your ideas into visually stunning and functional websites. Let's build something amazing together!
+                    Hello! I&apos;m Hammad Shamir, a creative web developer with over 2 years of experience. From personal blogs to e-commerce platforms, I bring a blend of technical expertise and creativity to every project. With a degree in Software Engineering, I&apos;m here to turn your ideas into visually stunning and functional websites. Let&apos;s build something amazing together!
                 </p>
                 <div className="mt-6 2xl:mt-10 flex flex-wrap justify-left gap-4">
                     <a
@@ -31,7 +31,7 @@ const About = () => {
                         href="#"
                     >
                         <span className="relative group-hover:text-light-gray font-bold">
-                            Let's Talk
+                            Let&apos;s Talk
                         </span>
                     </a>
                 </div>

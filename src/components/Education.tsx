@@ -1,4 +1,3 @@
-import JourneyCard from '@/elements/journeyCard'
 import React from 'react'
 
 const Education = () => {
