@@ -1,7 +1,7 @@
 import TypeWriter from "@/elements/TypeWriter"
 import Image from "next/image"
 import Link from "next/link"
-
+import { FaFacebook } from "react-icons/fa";
 const Banner = () => {
     return (
         <section className='min-h-screen mx-auto p-6 sm:p-0 sm:ps-6 lg:ps-16 flex flex-col md:flex-row gap-y-4 justify-between sm:items-center'>
@@ -29,16 +29,10 @@ const Banner = () => {
                             href="#"
                             rel="noreferrer"
                             target="_blank"
-                            className=" transition hover:text-gray-700/75"
+                            className=" transition hover:text-gray-700/75 "
                         >
                             <span className="sr-only">Facebook</span>
-                            <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                <path
-                                    fillRule="evenodd"
-                                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-                                    clipRule="evenodd"
-                                />
-                            </svg>
+                            <FaFacebook className="text-2xl fill-[blue-500]"/>
                         </a>
                     </li>
 
@@ -116,11 +110,10 @@ const Banner = () => {
                 <div className="mt-6 2xl:mt-10 flex flex-wrap justify-left gap-4">
                     <Link href={'/about'}
                         className="relative block w-full rounded border border-DeepNavy-blue
-                        hover:border-light-gray bg-DeepNavy-blue px-12 py-3 text-sm font-medium text-light-gray focus:outline-none focus:ring active:text-opacity-75 sm:w-auto text-center
-                        before:absolute before:top-0 before:right-0 before:w-2 before:h-full hover:before:w-full before:bg-gradient-to-r before:from-blue-500 before:via-blue-700 before:to-blue-900 
-                        before:content group
-                        before:transition-all before:ease-in-out before:duration-500
-                        before:before:rounded"
+                         bg-DeepNavy-blue px-12 py-3 text-sm font-medium text-light-gray focus:outline-none focus:ring active:text-opacity-75 sm:w-auto text-center
+                        before:absolute before:top-0 before:right-0 before:w-0 before:h-full hover:before:w-full before:bg-gradient-to-r before:from-indigo-500 before:via-purple-500 before:to-pink-500 
+                        before:rounded group
+                        before:transition-all before:ease-in-out before:duration-500"
                     >
                         <span className="relative">
                             My Journey
@@ -129,10 +122,9 @@ const Banner = () => {
 
                     <button
                         className="relative block w-full rounded border border-DeepNavy-blue
-                        hover:border-light-gray
-                         px-12 py-3 text-sm font-medium text-DeepNavy-blue hover:bg-DeepNavy-blue hover:text-light-gray focus:outline-none focus:ring active:DeepNavy-blue sm:w-auto text-center
-                        before:absolute before:top-0 before:left-0 before:w-2 before:h-full hover:before:w-full before:bg-gradient-to-r before:from-blue-500 before:via-blue-700 before:to-blue-900 
-                        before:content group
+                         px-12 py-3 text-sm font-medium text-DeepNavy-blue hover:text-light-gray focus:outline-none focus:ring active:DeepNavy-blue sm:w-auto text-center
+                        before:absolute before:top-0 before:left-0 before:w-0 before:h-full hover:before:w-full before:bg-gradient-to-r before:from-indigo-500 before:via-purple-500 before:to-pink-500 
+                        before:rounded group
                         before:transition-all before:ease-in-out before:duration-500
                         before:rounded"
                     >

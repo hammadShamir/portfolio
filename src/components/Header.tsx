@@ -17,23 +17,23 @@ const Header = () => {
                         <nav aria-label="Global" className="hidden md:block">
                             <ul className="flex items-center gap-6 text-sm">
                                 <li>
-                                    <Link className="transition hover:text-gray-500/75" href="/about"> About </Link>
+                                    <Link className="transition hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-pink-500 hover:bg-clip-text hover:text-transparent" href="/about"> About </Link>
                                 </li>
 
                                 <li>
-                                    <Link className="transition hover:text-gray-500/75" href="#"> Services </Link>
+                                    <Link className="transition hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-pink-500 hover:bg-clip-text hover:text-transparent" href="#"> Services </Link>
                                 </li>
 
                                 <li>
-                                    <Link className="transition hover:text-gray-500/75" href="#"> Portfolio </Link>
+                                    <Link className="transition hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-pink-500 hover:bg-clip-text hover:text-transparent" href="#"> Portfolio </Link>
                                 </li>
 
                                 <li>
-                                    <Link className="transition hover:text-gray-500/75" href="#"> Blog </Link>
+                                    <Link className="transition hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-pink-500 hover:bg-clip-text hover:text-transparent" href="#"> Blog </Link>
                                 </li>
 
                                 <li>
-                                    <Link className="transition hover:text-gray-500/75" href="#"> Contact </Link>
+                                    <Link className="transition hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-pink-500 hover:bg-clip-text hover:text-transparent" href="#"> Contact </Link>
                                 </li>
                             </ul>
                         </nav>
