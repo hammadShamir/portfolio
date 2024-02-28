@@ -12,7 +12,7 @@ const MobileMenu: React.FC<menu> = ({ menu, setMenu }) => {
                     <li className="transition-all hover:bg-light-gray hover:text-DeepNavy-blue cursor-pointer py-4 w-full text-center"
                         onClick={() => setMenu(!menu)}
                     >
-                        <Link className="transition md:hover:text-gray-500/75" href="#about"> About </Link>
+                        <Link className="transition md:hover:text-gray-500/75" href="/about"> About </Link>
                     </li>
 
                     <li className="transition-all hover:bg-light-gray hover:text-DeepNavy-blue cursor-pointer py-4 w-full text-center"

@@ -1,5 +1,6 @@
 import TypeWriter from "@/elements/TypeWriter"
 import Image from "next/image"
+import Link from "next/link"
 
 const Banner = () => {
     return (
@@ -113,7 +114,7 @@ const Banner = () => {
                 </ul>
 
                 <div className="mt-6 2xl:mt-10 flex flex-wrap justify-left gap-4">
-                    <button
+                    <Link href={'/about'}
                         className="relative block w-full rounded border border-DeepNavy-blue
                         hover:border-light-gray bg-DeepNavy-blue px-12 py-3 text-sm font-medium text-light-gray focus:outline-none focus:ring active:text-opacity-75 sm:w-auto text-center
                         before:absolute before:top-0 before:right-0 before:w-2 before:h-full hover:before:w-full before:bg-gradient-to-r before:from-blue-500 before:via-blue-700 before:to-blue-900 
@@ -122,9 +123,9 @@ const Banner = () => {
                         before:before:rounded"
                     >
                         <span className="relative">
-                            Hire Me
+                            My Journey
                         </span>
-                    </button>
+                    </Link>
 
                     <button
                         className="relative block w-full rounded border border-DeepNavy-blue
@@ -136,7 +137,7 @@ const Banner = () => {
                         before:rounded"
                     >
                         <span className="relative">
-                            Portfolio
+                            Download CV
                         </span>
                     </button>
                 </div>

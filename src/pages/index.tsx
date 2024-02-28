@@ -12,7 +12,6 @@ export default function Home() {
   return (
     <>
       <Banner />
-      <About />
       <Service />
       <Projects />
       <Contact />
