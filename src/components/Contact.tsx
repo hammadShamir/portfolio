@@ -1,8 +1,21 @@
 import { MdMarkEmailRead } from "react-icons/md";
 import { FaPhoneVolume } from "react-icons/fa6";
 import { MdLocationPin } from "react-icons/md";
+import { ChangeEvent, useState } from "react";
 
 const Contact = () => {
+    const [data, setData] = useState({
+        email: "",
+        message: "",
+    })
+
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        setData({
+            ...data,
+            [e.target.name]: e.target.value,
+        })
+    }
+
     return (
         <div className="relative bg-light-gray mx-auto px-4 sm:px-6 lg:px-16 p-8 flex flex-col gap-y-6 items-center">
             <h2
@@ -13,7 +26,7 @@ const Contact = () => {
             <div className="w-full flex flex-col md:flex-row justify-center items-center gap-y-6 gap-x-12 md:py-6">
                 <div className="flex flex-col justify-center gap-y-6 bg-DeepNavy-blue text-light-gray p-6 rounded-lg shadow-lg shadow-DeepNavy-blue">
                     <div className=" flex flex-col gap-y-4">
-                        <h3 className="relative text-xl font-bold before:absolute before:bottom-0 before:left-0 before:w-20 before:h-1 before:bg-DeepNavy-blue pb-2">Get in Touch</h3>
+                        <h3 className="relative text-xl font-bold before:absolute before:bottom-0 before:left-0 before:w-20 before:h-1 before:bg-gradient-to-r before:from-indigo-500 before:via-purple-500 before:to-pink-500 pb-2">Get in Touch</h3>
                         <p className="max-w-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni facilis excepturi recusandae.</p>
                     </div>
                     <ul className="flex flex-col justify-center gap-6 md:gap-8">
@@ -24,11 +37,11 @@ const Contact = () => {
                                 target="_blank"
                                 className=" transition hover:text-gray-700/75 flex items-center gap-x-4"
                             >
-                                <div className="border-2 border-light-gray h-16 w-16 flex justify-center items-center rounded-full shadow-sm shadow-light-gray">
+                                <div className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 h-16 w-16 flex justify-center items-center rounded-full shadow-sm shadow-light-gray">
                                     <MdMarkEmailRead className="text-4xl text-light-gray" />
                                 </div>
-                                <div className="text-light-gray">
-                                    <h3 className="text-xl font-bold">EMAIL</h3>
+                                <div className="relative text-light-gray before:absolute before:bottom-0 before:left-0 before:w-40 before:h-1 before:bg-gradient-to-r before:from-indigo-500 before:via-purple-500 before:to-pink-500 pb-3">
+                                    <h3 className="relative text-xl font-bold ">EMAIL</h3>
                                     <span className="">developerhammad@gmail.com</span>
                                 </div>
                             </a>
@@ -40,10 +53,10 @@ const Contact = () => {
                                 target="_blank"
                                 className=" transition hover:text-gray-700/75 flex items-center gap-x-4"
                             >
-                                <div className="border-2 border-light-gray h-16 w-16 flex justify-center items-center rounded-full shadow-sm shadow-light-gray">
+                                <div className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 h-16 w-16 flex justify-center items-center rounded-full shadow-sm shadow-light-gray">
                                     <FaPhoneVolume className="text-4xl text-light-gray" />
                                 </div>
-                                <div className="text-light-gray">
+                                <div className="text-light-gray relative text-light-gray before:absolute before:bottom-0 before:left-0 before:w-40 before:h-1 before:bg-gradient-to-r before:from-indigo-500 before:via-purple-500 before:to-pink-500 pb-3">
                                     <h3 className="text-xl font-bold">PHONE</h3>
                                     <span className="">+92 311 2423899</span>
                                 </div>
@@ -56,10 +69,10 @@ const Contact = () => {
                                 target="_blank"
                                 className=" transition hover:text-gray-700/75 flex items-center gap-x-4"
                             >
-                                <div className="border-2 border-light-gray h-16 w-16 flex justify-center items-center rounded-full shadow-sm shadow-light-gray">
+                                <div className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 h-16 w-16 flex justify-center items-center rounded-full shadow-sm shadow-light-gray">
                                     <MdLocationPin className="text-4xl text-light-gray" />
                                 </div>
-                                <div className="text-light-gray">
+                                <div className="text-light-gray relative text-light-gray before:absolute before:bottom-0 before:left-0 before:w-40 before:h-1 before:bg-gradient-to-r before:from-indigo-500 before:via-purple-500 before:to-pink-500 pb-3">
                                     <h3 className="text-xl font-bold">LOCATION</h3>
                                     <span className="">Karachi, Pakistan</span>
                                 </div>
@@ -69,9 +82,22 @@ const Contact = () => {
                     </ul>
                 </div>
                 <form className="flex-1 flex flex-col gap-y-6 w-full justify-center md:items-start">
-                    <input type="email" className="bg-transparent border-2 border-DeepNavy-blue w-full rounded-lg py-2 px-4 placeholder-DeepNavy-blue shadow-sm shadow-DeepNavy-blue" placeholder="Email" />
-                    <textarea name="" id="" rows={10} className="bg-transparent border-2 border-DeepNavy-blue w-full rounded-lg py-2 px-4 placeholder-DeepNavy-blue shadow-sm shadow-DeepNavy-blue" placeholder="Message"></textarea>
-                    <button className="bg-DeepNavy-blue px-12 py-2 rounded-lg shadow-md shadow-DeepNavy-blue text-light-gray text-xl">Send</button>
+                    <div className={`relative w-full before:absolute before:top-0 before:left-0 before:w-${data.email.length > 0 ? "full" : "0"} before:h-full before:bg-gradient-to-r before:from-indigo-500 before:via-purple-500 before:to-pink-500 
+                    before:rounded group
+                    before:transition-all before:ease-in-out before:duration-500`}>
+                        <input type="email" name="email" className={`relative bg-transparent border-2 border-DeepNavy-blue w-full rounded-lg py-2 px-4 placeholder-DeepNavy-blue shadow-sm shadow-DeepNavy-blue text-DeepNavy-blue focus-visible:outline-none ${data.email.length > 0 && "text-light-gray [text-shadow:_0_1px_0_var(--tw-shadow-color)] font-bold"}
+                    `} placeholder="Email" onChange={handleChange} value={data.email} />
+                    </div>
+                    <div className={`relative w-full before:absolute before:top-0 before:left-0 before:w-${data.message.length > 0 ? "full" : "0"} before:h-full before:bg-gradient-to-r before:from-indigo-500 before:via-purple-500 before:to-pink-500 
+                    before:rounded group
+                    before:transition-all before:ease-in-out before:duration-500`}>
+                        <textarea name="message" id="" rows={10} className={`relative bg-transparent border-2 border-DeepNavy-blue w-full rounded-lg py-2 px-4 placeholder-DeepNavy-blue shadow-sm shadow-DeepNavy-blue text-DeepNavy-blue focus-visible:outline-none ${data.message.length > 0 && "text-light-gray [text-shadow:_0_1px_0_var(--tw-shadow-color)] font-bold"}`} placeholder="Message" onChange={handleChange} value={data.message}></textarea>
+                    </div>
+                    <button className="relative bg-DeepNavy-blue px-12 py-2 rounded-lg shadow-md shadow-DeepNavy-blue text-light-gray text-xl before:absolute before:bottom-0 before:left-0 before:w-full before:h-0 hover:before:h-full before:bg-gradient-to-r before:from-indigo-500 before:via-purple-500 before:to-pink-500 
+                        before:rounded-lg group
+                        before:transition-all before:ease-in-out before:duration-500">
+                        <span className="relative">Send</span>
+                    </button>
                 </form>
             </div>
         </div>

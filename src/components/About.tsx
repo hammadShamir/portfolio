@@ -15,17 +15,18 @@ const About = () => {
             {/* CONTENT */}
             <div className="relative flex-1 flex flex-col">
                 <h2
-                    className="bg-gradient-to-r from-blue-500 via-blue-700 to-blue-900 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl xl:text-6xl 2xl:text-7xl"
+                    className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl xl:text-6xl 2xl:text-7xl"
                 >
                     About Me
                 </h2>
-                <p className="mt-4 max-w-xl sm:text-xl/relaxed">
+                <p className="mt-4 max-w-xl sm:text-xl/relaxed text-light-gray">
                     Hello! I&apos;m Hammad Shamir, a creative web developer with over 2 years of experience. From personal blogs to e-commerce platforms, I bring a blend of technical expertise and creativity to every project. With a degree in Software Engineering, I&apos;m here to turn your ideas into visually stunning and functional websites. Let&apos;s build something amazing together!
                 </p>
                 <div className="mt-6 2xl:mt-10 flex flex-wrap justify-left gap-4">
                     <a
                         className="relative block w-full rounded border border-light-gray bg-light-gray px-12 py-3 text-sm font-medium text-DeepNavy-blue  focus:outline-none focus:ring active:text-opacity-75 sm:w-auto text-center
-                        before:absolute before:top-0 before:left-0 before:w-full before:h-2 hover:before:h-full before:bg-gradient-to-r before:from-blue-500 before:via-blue-700 before:to-blue-900 
+                        before:absolute before:top-0 before:left-0 before:w-full before:h-0 hover:before:h-full before:bg-gradient-to-r before:from-blue-500 before:via-blue-700 before:to-blue-900 
+                        before:bg-gradient-to-r before:from-indigo-500 before:via-purple-500 before:to-pink-500
                         before:content group
                         before:transition-all before:ease-in-out before:duration-500"
                         href="#"
