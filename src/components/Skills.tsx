@@ -2,12 +2,12 @@ import Image from 'next/image'
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import 'swiper/css/pagination';
-import { Autoplay } from 'swiper/modules';
+import 'swiper/css/navigation';
+import { Autoplay, Navigation } from 'swiper/modules';
 const Skills = () => {
     return (
-        <div className='relative mx-auto px-4 sm:px-6 lg:px-16'>
-            <div className='bg-DeepNavy-blue p-6 max-w-screen-lg w-full absolute left-1/2 top-[-50px] translate-x-[-50%] shadow-md shadow-DeepNavy-blue z-10 rounded-lg'>
+        <div className='bg-DeepNavy-blue mx-auto px-4 sm:px-6 lg:px-16 p-8 '>
+            <div className=''>
                 <h2
                     className="self-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-5xl font-extrabold text-transparent xl:text-6xl 2xl:text-7xl text-center"
                 >
@@ -24,6 +24,7 @@ const Skills = () => {
                             disableOnInteraction: true,
                             pauseOnMouseEnter: true
                         }}
+                        navigation={true}
                         breakpoints={{
                             576: {
                                 // width: 576,
@@ -34,7 +35,7 @@ const Skills = () => {
                                 slidesPerView: 3,
                             },
                         }}
-                        modules={[Autoplay]}
+                        modules={[Autoplay,Navigation]}
                         style={{ margin: "0px" }}
                     >
                         <SwiperSlide className='cursor-pointer'>
