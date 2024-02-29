@@ -42,7 +42,7 @@ const Contact = () => {
                                 </div>
                                 <div className="relative text-light-gray before:absolute before:bottom-0 before:left-0 before:w-40 before:h-1 before:bg-gradient-to-r before:from-indigo-500 before:via-purple-500 before:to-pink-500 pb-3">
                                     <h3 className="relative text-xl font-bold ">EMAIL</h3>
-                                    <span className="">developerhammad@gmail.com</span>
+                                    <span className="break-all">developerhammad@gmail.com</span>
                                 </div>
                             </a>
                         </li>
@@ -83,15 +83,15 @@ const Contact = () => {
                 </div>
                 <form className="flex-1 flex flex-col gap-y-6 w-full justify-center md:items-start">
                     <div className={`relative w-full before:absolute before:top-0 before:left-0 before:w-${data.email.length > 0 ? "full" : "0"} before:h-full before:bg-gradient-to-r before:from-indigo-500 before:via-purple-500 before:to-pink-500 
-                    before:rounded group
-                    before:transition-all before:ease-in-out before:duration-500`}>
-                        <input type="email" name="email" className={`relative bg-transparent border-2 border-DeepNavy-blue w-full rounded-lg py-2 px-4 placeholder-DeepNavy-blue shadow-sm shadow-DeepNavy-blue text-DeepNavy-blue focus-visible:outline-none ${data.email.length > 0 && "text-light-gray [text-shadow:_0_1px_0_var(--tw-shadow-color)] font-bold"}
+                    before:rounded-lg group
+                    before:transition-all before:ease-in-out before:duration-500 shadow-sm shadow-DeepNavy-blue border-2 border-DeepNavy-blue rounded-lg`}>
+                        <input type="email" name="email" className={`relative bg-transparent w-full py-2 px-4 placeholder-DeepNavy-blue text-DeepNavy-blue focus-visible:outline-none  ${data.email.length > 0 && "text-light-gray [text-shadow:_0_1px_0_var(--tw-shadow-color)] font-bold"}
                     `} placeholder="Email" onChange={handleChange} value={data.email} />
                     </div>
                     <div className={`relative w-full before:absolute before:top-0 before:left-0 before:w-${data.message.length > 0 ? "full" : "0"} before:h-full before:bg-gradient-to-r before:from-indigo-500 before:via-purple-500 before:to-pink-500 
-                    before:rounded group
-                    before:transition-all before:ease-in-out before:duration-500`}>
-                        <textarea name="message" id="" rows={10} className={`relative bg-transparent border-2 border-DeepNavy-blue w-full rounded-lg py-2 px-4 placeholder-DeepNavy-blue shadow-sm shadow-DeepNavy-blue text-DeepNavy-blue focus-visible:outline-none ${data.message.length > 0 && "text-light-gray [text-shadow:_0_1px_0_var(--tw-shadow-color)] font-bold"}`} placeholder="Message" onChange={handleChange} value={data.message}></textarea>
+                    before:rounded-lg group
+                    before:transition-all before:ease-in-out before:duration-500 border-2 border-DeepNavy-blue rounded-lg`}>
+                        <textarea name="message" id="" rows={10} className={`relative bg-transparent w-full py-2 px-4 placeholder-DeepNavy-blue  text-DeepNavy-blue focus-visible:outline-none  ${data.message.length > 0 && "text-light-gray [text-shadow:_0_1px_0_var(--tw-shadow-color)] font-bold"}`} placeholder="Message" onChange={handleChange} value={data.message}></textarea>
                     </div>
                     <button className="relative bg-DeepNavy-blue px-12 py-2 rounded-lg shadow-md shadow-DeepNavy-blue text-light-gray text-xl before:absolute before:bottom-0 before:left-0 before:w-full before:h-0 hover:before:h-full before:bg-gradient-to-r before:from-indigo-500 before:via-purple-500 before:to-pink-500 
                         before:rounded-lg group

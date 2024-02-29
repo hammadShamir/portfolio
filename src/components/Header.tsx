@@ -7,9 +7,8 @@ const Header = () => {
     const [menu, setMenu] = useState<boolean>(false);
 
     return (
-        <>
-            <header className="bg-DeepNavy-blue text-light-gray shadow-md shadow-black sticky top-0 left-0 z-[30] w-full mx-auto px-4 sm:px-6 lg:px-16">
-                <div className="flex h-16 items-center justify-between">
+            <header className="relative text-light-gray sticky top-0 left-0 z-20 ">
+                <div className="flex h-16 items-center justify-between shadow-md shadow-black w-full mx-auto px-4 sm:px-6 lg:px-16 bg-DeepNavy-blue">
                     <div className="flex-1 md:flex md:items-center md:gap-12 text-3xl">
                         <Logo />
                     </div>
@@ -56,9 +55,8 @@ const Header = () => {
                         </div>
                     </div>
                 </div>
+                <MobileMenu menu={menu} setMenu={setMenu} />
             </header>
-            <MobileMenu menu={menu} setMenu={setMenu} />
-        </>
     )
 }
 
