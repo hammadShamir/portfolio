@@ -24,7 +24,7 @@ const Banner = () => {
 
                 <h3 className="flex gap-x-2 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-xl font-extrabold text-transparent sm:text-3xl xl:text-4xl 2xl:text-5xl">a <TypeWriter /></h3>
 
-                <SocialLinks customStyle="mt-6 justify-left"/>
+                <SocialLinks customStyle="mt-6 justify-left" />
 
                 <div className="mt-6 2xl:mt-10 flex flex-wrap justify-left gap-4">
                     <Link href={'/about'}
@@ -39,7 +39,7 @@ const Banner = () => {
                         </span>
                     </Link>
 
-                    <button
+                    <Link href={'/HammadShamir.pdf'} download={true}
                         className="relative block w-full rounded border border-DeepNavy-blue
                          px-12 py-3 text-sm font-medium text-DeepNavy-blue hover:text-light-gray focus:outline-none focus:ring active:DeepNavy-blue sm:w-auto text-center
                         before:absolute before:top-0 before:left-0 before:w-0 before:h-full hover:before:w-full before:bg-gradient-to-r before:from-indigo-500 before:via-purple-500 before:to-pink-500 
@@ -50,7 +50,7 @@ const Banner = () => {
                         <span className="relative">
                             Download CV
                         </span>
-                    </button>
+                    </Link>
                 </div>
             </div>
         </section>

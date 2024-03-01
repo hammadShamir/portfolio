@@ -1,10 +1,12 @@
 import Link from "next/link"
+import { usePathname } from "next/navigation"
 import { SetStateAction, useEffect } from "react"
 interface menu {
     menu: boolean
     setMenu: React.Dispatch<SetStateAction<boolean>>
 }
 const MobileMenu: React.FC<menu> = ({ menu, setMenu }) => {
+    const path = usePathname();
     useEffect(() => {
         if (menu) {
             document?.body.classList.add("overflow-y-hidden")
@@ -26,7 +28,7 @@ const MobileMenu: React.FC<menu> = ({ menu, setMenu }) => {
                     <li className="transition-all hover:bg-light-gray hover:text-DeepNavy-blue cursor-pointer py-4 w-full text-center"
                         onClick={() => setMenu(!menu)}
                     >
-                        <Link className="transition md:hover:text-gray-500/75" href="#service"> Services </Link>
+                        <Link className="transition md:hover:text-gray-500/75" href={path === '/' ? "#service" : "/#service"}> Services </Link>
                     </li>
 
                     <li className="transition-all hover:bg-light-gray hover:text-DeepNavy-blue cursor-pointer py-4 w-full text-center"

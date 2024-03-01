@@ -1,8 +1,10 @@
 import Link from "next/link"
+import { usePathname } from "next/navigation"
 interface SocialLinks {
     customStyle?: string
 }
 const Links: React.FC<SocialLinks> = ({ customStyle }) => {
+    const path = usePathname()
     return (
         <ul className={`flex items-center gap-6 ${customStyle}`}>
             <li>
@@ -10,7 +12,7 @@ const Links: React.FC<SocialLinks> = ({ customStyle }) => {
             </li>
 
             <li>
-                <Link className="transition hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-pink-500 hover:bg-clip-text hover:text-transparent" href="#"> Services </Link>
+                <Link className="transition hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-pink-500 hover:bg-clip-text hover:text-transparent" href={path === '/' ? "#service" : "/#service"}> Services </Link>
             </li>
 
             <li>

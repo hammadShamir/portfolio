@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 
 const About = () => {
     return (
@@ -23,18 +24,17 @@ const About = () => {
                     Hello! I&apos;m Hammad Shamir, a creative web developer with over 2 years of experience. From personal blogs to e-commerce platforms, I bring a blend of technical expertise and creativity to every project. With a degree in Software Engineering, I&apos;m here to turn your ideas into visually stunning and functional websites. Let&apos;s build something amazing together!
                 </p>
                 <div className="mt-6 2xl:mt-10 flex flex-wrap justify-left gap-4">
-                    <a
+                    <Link href={'#contact'}
                         className="relative block w-full rounded border border-light-gray bg-light-gray px-12 py-3 text-sm font-medium text-DeepNavy-blue  focus:outline-none focus:ring active:text-opacity-75 sm:w-auto text-center
                         before:absolute before:top-0 before:left-0 before:w-full before:h-0 hover:before:h-full before:bg-gradient-to-r before:from-blue-500 before:via-blue-700 before:to-blue-900 
                         before:bg-gradient-to-r before:from-indigo-500 before:via-purple-500 before:to-pink-500
                         before:content group
                         before:transition-all before:ease-in-out before:duration-500"
-                        href="#"
                     >
                         <span className="relative group-hover:text-light-gray font-bold">
                             Let&apos;s Talk
                         </span>
-                    </a>
+                    </Link>
                 </div>
 
             </div>
