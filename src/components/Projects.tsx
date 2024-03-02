@@ -1,8 +1,10 @@
-import ProjectCard from "@/elements/ProjectCard"
+import ProjectCard from "@/elements/ProjectCard";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Autoplay } from 'swiper/modules';
+import { projects } from "./Data";
+
 const Projects = () => {
     return (
         <section className="bg-DeepNavy-blue mx-auto px-4 sm:px-6 lg:px-16 p-8  flex flex-col gap-y-8 ">
@@ -22,25 +24,23 @@ const Projects = () => {
                 }}
                 breakpoints={{
                     576: {
-                        // width: 576,
                         slidesPerView: 2,
                     },
                     900: {
-                        // width: 576,
                         slidesPerView: 3,
                     },
                 }}
                 modules={[Autoplay]}
                 style={{ margin: "0px" }}
             >
-                <SwiperSlide className="shadow-lg shadow-light-gray"> <ProjectCard /> </SwiperSlide>
-                <SwiperSlide className="shadow-lg shadow-light-gray"> <ProjectCard /> </SwiperSlide>
-                <SwiperSlide className="shadow-lg shadow-light-gray"> <ProjectCard /> </SwiperSlide>
-                <SwiperSlide className="shadow-lg shadow-light-gray"> <ProjectCard /> </SwiperSlide>
-                <SwiperSlide className="shadow-lg shadow-light-gray"> <ProjectCard /> </SwiperSlide>
+                {projects?.map((item, index) => (
+                    <SwiperSlide key={index} className="shadow-lg shadow-light-gray">
+                        <ProjectCard name={item.name} url={item.url} img={item.img} />
+                    </SwiperSlide>
+                ))}
             </Swiper>
         </section>
     )
 }
 
-export default Projects
+export default Projects;
