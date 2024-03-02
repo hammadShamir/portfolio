@@ -1,7 +1,8 @@
 import { MdMarkEmailRead } from "react-icons/md";
 import { FaPhoneVolume } from "react-icons/fa6";
-import { MdLocationPin } from "react-icons/md";
+import { IoLogoWhatsapp } from "react-icons/io";
 import { ChangeEvent, useState } from "react";
+import Link from "next/link";
 
 const Contact = () => {
     const [data, setData] = useState({
@@ -31,8 +32,8 @@ const Contact = () => {
                     </div>
                     <ul className="flex flex-col justify-center gap-6 md:gap-8">
                         <li>
-                            <a
-                                href="#"
+                            <Link
+                                href="mailto:developerhammad64@gmail.com"
                                 rel="noreferrer"
                                 target="_blank"
                                 className=" transition hover:text-gray-700/75 flex items-center gap-x-4"
@@ -42,13 +43,13 @@ const Contact = () => {
                                 </div>
                                 <div className="relative text-light-gray before:absolute before:bottom-0 before:left-0 before:w-40 before:h-1 before:bg-gradient-to-r before:from-indigo-500 before:via-purple-500 before:to-pink-500 pb-3">
                                     <h3 className="relative text-xl font-bold ">EMAIL</h3>
-                                    <span className="break-all">developerhammad@gmail.com</span>
+                                    <span className="break-all">developerhammad64@gmail.com</span>
                                 </div>
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a
-                                href="#"
+                            <Link
+                                href="tel:+923112423899"
                                 rel="noreferrer"
                                 target="_blank"
                                 className=" transition hover:text-gray-700/75 flex items-center gap-x-4"
@@ -60,23 +61,23 @@ const Contact = () => {
                                     <h3 className="text-xl font-bold">PHONE</h3>
                                     <span className="">+92 311 2423899</span>
                                 </div>
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a
-                                href="#"
+                            <Link
+                                href="https://wa.me/923112423899"
                                 rel="noreferrer"
                                 target="_blank"
                                 className=" transition hover:text-gray-700/75 flex items-center gap-x-4"
                             >
                                 <div className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 h-16 w-16 flex justify-center items-center rounded-full shadow-sm shadow-light-gray">
-                                    <MdLocationPin className="text-4xl text-light-gray" />
+                                    <IoLogoWhatsapp className="text-4xl text-light-gray" />
                                 </div>
                                 <div className="text-light-gray relative text-light-gray before:absolute before:bottom-0 before:left-0 before:w-40 before:h-1 before:bg-gradient-to-r before:from-indigo-500 before:via-purple-500 before:to-pink-500 pb-3">
-                                    <h3 className="text-xl font-bold">LOCATION</h3>
-                                    <span className="">Karachi, Pakistan</span>
+                                    <h3 className="text-xl font-bold">Whatsapp</h3>
+                                    <span className="">+92 311 2423899</span>
                                 </div>
-                            </a>
+                            </Link>
                         </li>
 
                     </ul>
