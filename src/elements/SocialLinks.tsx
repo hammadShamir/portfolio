@@ -50,7 +50,7 @@ const SocialLinks: React.FC<SocialLinks> = ({ customStyle }) => {
 
             <li>
                 <Link
-                    href="#"
+                    href="https://github.com/hammadShamir"
                     rel="noreferrer"
                     target="_blank"
                     className="transition hover:text-gray-700/75"
