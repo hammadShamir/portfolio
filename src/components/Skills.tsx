@@ -6,7 +6,7 @@ import 'swiper/css/navigation';
 import { Autoplay, Navigation } from 'swiper/modules';
 const Skills = () => {
     return (
-        <div className='bg-DeepNavy-blue mx-auto px-4 sm:px-6 lg:px-16 p-8 '>
+        <div id='skills' className='bg-DeepNavy-blue mx-auto px-4 sm:px-6 lg:px-16 p-8 '>
             <div className=''>
                 <h2
                     className="self-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-5xl font-extrabold text-transparent xl:text-6xl 2xl:text-7xl text-center"

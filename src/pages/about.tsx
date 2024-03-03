@@ -1,6 +1,6 @@
 import About from '@/components/About'
 import Contact from '@/components/Contact'
-import Education from '@/components/Education'
+import Qualification from '@/components/Qualification'
 import Skills from '@/components/Skills'
 import React from 'react'
 
@@ -8,7 +8,7 @@ const about = () => {
     return (
         <>
             <About />
-            <Education />
+            <Qualification />
             <Skills />
             <Contact />
         </>
