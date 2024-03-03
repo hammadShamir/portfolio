@@ -14,7 +14,7 @@ const Education = () => {
                     {
                         education?.map((item, index) => {
                             return (
-                                <div className='relative p-6 pe-0 before:w-4 before:h-4 before:rounded-full before:bg-DeepNavy-blue before:absolute before:left-0 before:top-0 before:shadow-lg before:shadow-DeepNavy-blue after:w-1 after:h-full after:bg-DeepNavy-blue after:absolute after:left-1.5 after:top-1 after:shadow-lg after:shadow-DeepNavy-blue'>
+                                <div key={index} className='relative p-6 pe-0 before:w-4 before:h-4 before:rounded-full before:bg-DeepNavy-blue before:absolute before:left-0 before:top-0 before:shadow-lg before:shadow-DeepNavy-blue after:w-1 after:h-full after:bg-DeepNavy-blue after:absolute after:left-1.5 after:top-1 after:shadow-lg after:shadow-DeepNavy-blue'>
                                     <div className='relative flex flex-col gap-y-2 shadow-md shadow-DeepNavy-blue p-6 text-DeepNavy-blue rounded-md hover:text-light-gray hover:[text-shadow:_0_1px_0_var(--tw-shadow-color)]
                     before:absolute before:top-0 before:left-0 before:w-2 before:h-full hover:before:w-full before:bg-gradient-to-r before:from-indigo-500 before:via-purple-500 before:to-pink-500 cursor-pointer before:transition-all before:ease-in-out before:duration-500 group'>
                                         <div className='flex justify-between'>
@@ -40,7 +40,7 @@ const Education = () => {
                     {
                         experiences?.map((item, index) => {
                             return (
-                                <div className='relative p-6 pe-0 before:w-4 before:h-4 before:rounded-full before:bg-DeepNavy-blue before:absolute before:left-0 before:top-0 before:shadow-lg after:w-1 after:h-full after:bg-DeepNavy-blue after:absolute after:left-1.5 after:top-1 after:shadow-lg'>
+                                <div key={index} className='relative p-6 pe-0 before:w-4 before:h-4 before:rounded-full before:bg-DeepNavy-blue before:absolute before:left-0 before:top-0 before:shadow-lg after:w-1 after:h-full after:bg-DeepNavy-blue after:absolute after:left-1.5 after:top-1 after:shadow-lg'>
                                     <div className='md:max-h-80 h-full relative bg-DeepNavy-blue flex flex-col gap-y-2 shadow-lg shadow-DeepNavy-blue p-6 text-light-gray rounded-md hover:text-light-gray hover:[text-shadow:_0_1px_0_var(--tw-shadow-color)]
                 before:absolute before:top-0 before:right-0 before:w-2 before:h-full hover:before:w-full before:bg-gradient-to-r before:from-indigo-500 before:via-purple-500 before:to-pink-500 cursor-pointer before:transition-all before:ease-in-out before:duration-500 group'>
                                         <div className='flex justify-between '>

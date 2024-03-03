@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -42,7 +41,7 @@ const Skills = () => {
                         {
                             skills?.map((item, index) => {
                                 return (
-                                    <SwiperSlide className='cursor-pointer'>
+                                    <SwiperSlide key={index} className='cursor-pointer'>
                                        <div key={index} className='w-52 h-52 mx-auto rounded-full p-2 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500'>
                                             <div className='bg-DeepNavy-blue h-full rounded-full flex flex-col gap-2 justify-center items-center text-light-gray'>
                                                 <Image className='max-w-20' src={item.img} width={200} height={200} alt='React Icon' />
