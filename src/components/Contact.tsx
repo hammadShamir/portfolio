@@ -28,7 +28,7 @@ const Contact = () => {
                 <div className="flex flex-col justify-center gap-y-6 bg-DeepNavy-blue text-light-gray p-6 rounded-lg shadow-lg shadow-DeepNavy-blue">
                     <div className=" flex flex-col gap-y-4">
                         <h3 className="relative text-xl font-bold before:absolute before:bottom-0 before:left-0 before:w-20 before:h-1 before:bg-gradient-to-r before:from-indigo-500 before:via-purple-500 before:to-pink-500 pb-2">Get in Touch</h3>
-                        <p className="max-w-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni facilis excepturi recusandae.</p>
+                        <p className="max-w-sm">Reach out and let's make things happen! Whether it's a project, collaboration, or just a friendly chat, I'm all ears. Excited to connect with you!</p>
                     </div>
                     <ul className="flex flex-col justify-center gap-6 md:gap-8">
                         <li>

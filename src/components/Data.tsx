@@ -23,6 +23,11 @@ interface qualificationData {
     designation?: string
 }
 
+interface skillsData {
+    name: string,
+    img: string
+}
+
 
 export const projects: projectData[] = [
     {
@@ -102,4 +107,56 @@ export const experiences: qualificationData[] = [
         title: "Frontend Developer",
         desc: "While holding the position of Frontend Developer at AliTech Solutions, I expanded my knowledge in frontend technologies. I focused on mastering responsiveness, achieving pixel-perfect designs, implementing server-side rendering, and delving into frameworks like Next JS, React, and various CSS frameworks such as Tailwind, Material UI, and Bootstrap. In my projects, I applied these technologies to elevate the user interface, ensuring an exceptional user experience."
     }
+]
+
+export const skills: skillsData[] = [
+    {
+        name: "MongoDB",
+        img: "/img/Skills/mongodb.png"
+    },
+    {
+        name: "Node JS",
+        img: "/img/Skills/nodejs.png"
+    },
+    {
+        name: "Express JS",
+        img: "/img/Skills/express.png"
+    },
+    {
+        name: "React JS",
+        img: "/img/Skills/react.png"
+    },
+    {
+        name: "Next JS",
+        img: "/img/Skills/nextjs.png"
+    },
+    {
+        name: "JavaScript",
+        img: "/img/Skills/js.png"
+    },
+    {
+        name: "TypeScript",
+        img: "/img/Skills/ts.png"
+    },
+    {
+        name: "Tailwind CSS",
+        img: "/img/Skills/tailwind.png"
+    },
+    {
+        name: "Material UI",
+        img: "/img/Skills/mui.png"
+    },
+    {
+        name: "Bootstrap ",
+        img: "/img/Skills/bootstrap.png"
+    },
+    {
+        name: "HTML5",
+        img: "/img/Skills/html.png"
+    },
+    {
+        name: "CSS3",
+        img: "/img/Skills/css.png"
+    },
+
 ]
