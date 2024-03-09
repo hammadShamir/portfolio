@@ -16,7 +16,7 @@ const Links: React.FC<SocialLinks> = ({ customStyle }) => {
             </li>
 
             <li>
-                <Link className="transition hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-pink-500 hover:bg-clip-text hover:text-transparent" href="#"> Portfolio </Link>
+                <Link className="transition hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-pink-500 hover:bg-clip-text hover:text-transparent" href="/projects"> Projects </Link>
             </li>
 
             <li>

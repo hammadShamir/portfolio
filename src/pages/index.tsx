@@ -15,7 +15,8 @@ export default function Home() {
       <Banner />
       <About />
       <Service />
-      <Projects />
+      {/* <Projects /> */}
+      <Skills />
       <Contact />
     </>
   );

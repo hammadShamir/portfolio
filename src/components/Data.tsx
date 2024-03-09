@@ -7,9 +7,11 @@ import { SiWebpack } from "react-icons/si";
 
 
 interface projectData {
-    name: string,
-    url: string
+    name: string
     img: string
+    desc: string
+    url: string
+    repo: string
 }
 interface serviceData {
     icon: ReactElement,
@@ -31,30 +33,41 @@ interface skillsData {
 
 export const projects: projectData[] = [
     {
-        name: "Ethical Node",
-        url: "https://www.ethicalnode.com/",
-        img: "ethicalNode.png"
-    },
-    {
-        name: "Esthetix Dental Center",
-        url: "http://www.esthetixdentalcenters.com/",
-        img: "esthetix.png"
-    },
-    {
         name: "Hostelow",
+        img: "hostelow.png",
+        desc: "I played a key role in a startup project, where I established the backbone using Node.js and Express.js with MongoDB. I designed and implemented a secure user login system using JWT, set up email verification through Nodemailer, and developed essential management tools tailored for hostels.",
         url: "https://www.hostelow.com/",
-        img: "hostelow.png"
+        repo: "https://github.com/hammadShamir/hostelowbackend.git"
     },
     {
-        name: "Vuoto",
-        url: "https://www.vuoto.ca/",
-        img: 'vuoto.png'
+        name: "Ethical Node",
+        img: "ethicalNode.png",
+        desc: "I was Key contributor to the Analog Mutations team in successfully developing a multi-chain DeFi staking platform based on the Cosmos ecosystem. focusing on front-end development for project success",
+        url: "https://www.ethicalnode.com/",
+        repo: ""
     },
     {
         name: "Analog Mutations",
+        img: "analog.png",
+        desc: "Successfully Designed and developed the Analog Mutations Portfolio using Next.js and Tailwind CSS, emphasizing front-end excellence to ensure the successful completion of the project.",
         url: "https://analogmutations.com/",
-        img: "analog.png"
+        repo: ""
     },
+    {
+        name: "Esthetix Dental Center",
+        img: "esthetix.png",
+        desc: "I independently undertook and successfully delivered this freelance project, ensuring client satisfaction. I utilized Next.js and CSS for frontend development, integrated Rest APIs, employed MongoDB for data management, and handled the deployment and hosting aspects of the project.",
+        url: "http://www.esthetixdentalcenters.com/",
+        repo: "https://github.com/hammadShamir/dental.git"
+    },
+    {
+        name: "Vuoto",
+        img: 'vuoto.png',
+        desc: "Introducing VUOTO, the pinnacle of crypto tax reporting in Montreal. I take pride in successfully delivering this freelance project, where I seamlessly integrated Next.js and Tailwind CSS for an engaging frontend. Powering the dynamic functionality, I utilized Node.js, MongoDB, and Express.js for a robust backend, ensuring client satisfaction with every detail in crypto and NFT tax reporting.",
+        url: "https://www.vuoto.ca/",
+        repo: ""
+    },
+   
 ];
 
 export const service: serviceData[] = [
